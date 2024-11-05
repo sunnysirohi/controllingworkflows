@@ -9,7 +9,7 @@ jobs:
 
       - name: Runs a command
         run:
-          echo "Job One is Running"
+          mysql -u root -p password
   job-two:
     runs-on: ubuntu-latest
     needs: job-one
